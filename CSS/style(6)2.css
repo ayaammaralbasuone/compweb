@@ -1,0 +1,312 @@
+header ul li a{
+  transition: 0.5s !important;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+header ul li .active{
+  color: #FFAD60 !important;
+}
+header ul li a:hover{
+  color: #FFAD60 !important;
+}
+.cont{
+  color: white !important;
+  font-size: 18px;
+  line-height: 18px;
+}
+.navbar-toggler-icon{
+  background-color: white  !important;
+  padding: 20px;
+  border-radius: 5px;
+  }
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    justify-content: center !important;
+}
+.navbar-collapse {
+  padding-left: 34px !important;
+}
+.navbar-nav {
+  gap: 3rem!important;
+}
+#dropdown {
+  border: 1px solid black !important;
+  border-radius: 10px;
+  padding: 10px;
+}
+.seleced {
+  border: none;
+}
+@media(min-width:0) and (max-width:991px){
+  .navbar-nav {
+    gap: 1rem!important;
+  }
+
+}
+/* end header*/
+/* start hero*/
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width:90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .swiper {
+ margin-left: 3px !important;
+ width: 600px !important;
+ height: 600px !important;
+
+}
+.containe{
+  width: 100%;
+  margin: auto;
+}
+/* تحديد موقع pagination على اليسار */
+.swiper-pagination {
+  position: absolute;
+  top: 94% !important; /* تحديد المسافة الرأسية من الأعلى بالنسبة لل swiper-container */
+  left: 52% !important;
+}
+/* تحديد أنماط النقاط في pagination */
+.swiper-pagination-bullet {
+  width: 10px; /* تحديد عرض النقطة */
+  height: 10px; /* تحديد ارتفاع النقطة */
+  opacity: 1; /* تحديد التعتيم (يمكن تغييره حسب التفضيلات) */
+  margin: 0 5px; /* تحديد المسافة الأفقية بين النقاط */
+  cursor: pointer; /* تغيير المؤشر إلى يد لإشارة إلى التفاعل */
+  background-color: #102469;
+}
+/* تحديد أنماط النقطة النشطة في pagination */
+.swiper-pagination-bullet-active {
+  opacity: 1; /* تظهر النقطة النشطة بشكل كامل */
+  background-color: #F99E1E; /* تحديد لون الخلفية */
+}
+#text{
+  width: 550px;
+}
+#text h1{
+  font-size: 40px;
+  font-weight: bold ;
+  color: #102469;
+  margin-bottom: 40px !important;
+}
+#text p{
+  font-size: 21px;
+  width: 550px;
+  margin-bottom: 40px !important;
+  line-height: 40px;
+}
+#text .active{
+  font-size: 25px !important;
+  color: #F99E1E !important;
+}
+#text button{
+  font-size: 18px !important;
+  color: #F99E1E !important;
+  border: 1px solid #F99E1E;
+  border-radius: 15px;
+  background-color: transparent !important;
+  transition: 0.5s;
+}
+#text button:hover{
+  color: white !important;
+  border:none;
+  border-radius: 15px;
+  background-color:#F99E1E !important;
+}
+@media(min-width:0) and (max-width:991px){
+  #text h1{
+    width: 90%;
+    margin: auto;
+  }
+  #text p{
+    width: 80%;
+    margin: auto;
+  }
+}
+/* end hero*/
+/* start you*/
+.you-section{
+  margin-top:100px;
+  margin-bottom: 30px;
+}
+.you-section .body-you{
+  margin-bottom: 30px;
+}
+.you-section .body-you h3{
+  font-size: 40px;
+  font-weight: bold;
+  color: #102469;
+  padding-bottom: 10px;
+}
+.you-section .body-you p{
+  font-size: 21px;
+  font-weight: 400;
+}
+/* end you*/
+/* start team*/
+.head-sale {
+  text-align: center;
+  margin-bottom: 50px;
+  }
+  .head-sale h1{
+  color: #102469;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  }
+  .head-sale p {
+    font-size: 20px;
+    font-weight:400;
+    width: 45%;
+    margin: auto;
+  }
+  .box-team{
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .box-teamk .cont-team p{
+    color: #FFFFFF !important;
+    font-size: 20px;
+    font-weight: 400;
+  
+  }
+  .box-team .cont-team{
+    color: #FFFFFF;
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .box-team .img-baccolor{
+    position: absolute;
+    background-color: rgba(23, 34, 77, 0.28);
+    border-radius: 15px;
+    top: 0;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .box-team .img-baccolor:hover{
+    opacity: 1;
+  }
+  .box-team .cont-team:hover{
+      opacity: 1;
+  }
+  @media(min-width:0) and (max-width:767px){
+    .body-team-img{
+      width: 54%;
+      margin: auto;
+    }
+    .head-sale p {
+      width: 70%;
+    }
+  }
+
+/* end team*/
+/* start footer*/
+.head-foot{
+  margin-top: 70px;
+}
+.body-footer .contain-footer{
+  border: 1px solid #E9E9E9;
+  margin-bottom: 50px;
+  width: 30%;
+  text-align: center;
+
+}
+.body-footer .contain-footer .contain-footer-icon{
+  background-color: #102469;
+  color: #F99E1E;
+  padding: 20px 0;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+}
+.body-footer .contain-footer .contain-footer-icon:nth-child(2){
+  background-color: #F99E1E;
+  color: #102469;
+  padding: 20px 0;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+}
+.body-footer .contain-footer .contain-footer-icon .p-active::after{
+  content: "";
+  display: inline-block;
+  border: 10px solid;
+  border-color:#102469 transparent transparent  transparent ;
+  position: absolute;
+  bottom: -22%;
+  right: 48%;
+}
+.body-footer .contain-footer .contain-footer-icon .active-active::before{
+  content: "";
+  display: inline-block;
+  border: 10px solid;
+  border-color: transparent  transparent #F99E1E transparent ;
+  position: absolute;
+  top: -22%;
+  right: 48%;
+}
+.body-footer .contain-footer .contain-footer-icon i{
+  font-size: 15px;
+  margin-bottom: 11px;
+}
+.body-footer .contain-footer .active{
+  padding: 30px 0 20px 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+@media(min-width:0) and (max-width:991px){
+  .body-footer .contain-footer{
+    width: 54%;
+    margin: auto;
+    margin-bottom: 30px;
+ }
+}
+.foot-foot{
+  background-color: #102469;
+  padding: 20px 0;
+}
+.foot-foot footer p{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.foot-foot footer .foot{
+  display: flex;
+  gap: 15px;
+
+}
+.foot-foot footer .foot a{
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+ padding: 8px 10px;
+ width: 40px;
+ height: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+.foot-foot footer .foot a:hover{
+  transform: rotate(360deg)
+}
+
+/* end footer */
